@@ -1,0 +1,6 @@
+.container{
+    width: fit-content;
+    padding: 10px;
+    line-height: 50px;
+    align-items: center;
+  }
