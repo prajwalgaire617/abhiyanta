@@ -1,34 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="report.css">
-        <script src="editor.js"></script>
-    </head>
-    <body>
-        <h1 class="text-center">Report Your Case here.</h1>
-        <div id="container">
-            <form action="" class="form-control">
-                <label for="victim_name">Victim Name: </label>
-                <input type="text" class="form-control" id="victim_name"placeholder="Enter victim name"> 
-                <label for="victim_age">Victim Age: </label>
-                <input type="number" class="form-control" id="victim_age" placeholder="Enter victim age"> 
-                <label for="Editor">Describe your case:</label>
-                <div id="editor">
-                    
-                </div>
-                <button class="btn btn-primary my-3">Submit Case</button>
-            </form>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-        <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/super-build/ckeditor.js"></script>
-        
-        <script>
-           CKEDITOR.ClassicEditor.create(document.getElementById("editor"), {
+
+CKEDITOR.ClassicEditor.create(document.getElementById("editor"), {
     //   tools that should display our editor 
 
         toolbar: {
@@ -39,7 +10,7 @@
                 'bulletedList', 'numberedList', '|',
                 'undo', 'redo',
                 'alignment', '|',
-                'link', 'insertImage','mediaEmbed','|',
+                'link', 'insertImage','|',
             ],
             shouldNotGroupWhenFull: true
         },
@@ -84,8 +55,23 @@
             options: [ 10, 12, 14, 'default', 18, 20, 22 ],
             supportAllValues: true
         },
-   
-    
+        
+        // htmlSupport: {
+        //     allow: [
+        //         {
+        //             name: /.*/,
+        //             attributes: true,
+        //             classes: true,
+        //             styles: true
+        //         }
+        //     ]
+        // },
+       
+        // htmlEmbed: {
+        //     showPreviews: true
+        // },
+       
+
         // decorate the link that we use inside our editor 
 
         link: {
@@ -120,7 +106,4 @@
             'WProofreader',
             'MathType'
         ]
-    }); 
-        </script>
-    </body>
-</html>
+    });

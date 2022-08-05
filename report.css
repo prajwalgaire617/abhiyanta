@@ -1,3 +1,20 @@
 .ck.ck-editor__main>.ck-editor__editable{
     height: 300px;
 }
+
+#container {
+    width: 1000px;
+    margin: 20px auto;
+}
+.ck-editor__editable[role="textbox"] {
+    
+    min-height: 200px;
+}
+.ck-content .image {
+    
+    max-width: 80%;
+    margin: 20px auto;
+}
+/* #victim_age{
+    margin-bottom: 5px;
+} */
