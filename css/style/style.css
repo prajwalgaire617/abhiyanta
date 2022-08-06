@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(212, 210, 210, 0.452);
+}
+
+.login-container{
+    display: flex;
+    background-color: white;
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 8px rgba(66, 66, 66, 0.753);
+}
+.login-banner{
+    width: 50%;
+    overflow: hidden;
+    background-image: url('../img/banner1.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.login-form{
+    height: 100%;
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+}
+.login-title{
+    margin-bottom: 20px;
+}
+
+.field{
+    width: 100%;
+    height: 40px;
+    font-size: 1.115rem;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(99, 97, 97, 0.514);
+    border-radius: 4px;
+}
+
+.login-btn{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    height: 40px;
+    width: 100%;
+    background: none;
+    border:  none;
+    background-color: hotpink;
+    border-radius: 7px;
+    cursor: pointer;  
+}
+.login-btn:hover{
+    background-color: rgba(252, 85, 168, 0.959);
+}
+
+.register-btn a{
+    text-decoration: none;
+    color: white
+}
+
+
+.line{
+    height: 1px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgba(119, 119, 119, 0.397);
+}
+.register-btn{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    height: 40px;
+    width: 50%;
+    background: none;
+    border:  none;
+    background-color: rgb(39, 190, 240);
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+.register-btn:hover{
+    background-color: rgb(39, 190, 240);
+}
+.rememberMe{
+    margin-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .login-container{
+        flex-direction: column-reverse;
+        width: 80%;
+        height: 70%;
+        align-items: center;
+    }
+    .login-banner{
+        width: 100%;
+        height:40%
+    }
+    .login-form{
+        padding:0;
+        align-items: none;
+    }
+    .register-btn{
+        margin-bottom: 20px
+    }
+    .login-title{
+        margin-top: 20px
+    }
+}

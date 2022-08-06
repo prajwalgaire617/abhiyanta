@@ -1,0 +1,33 @@
+body{
+    background: #fafafa
+}
+.card{
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    padding: 10px;
+    /* border-radius: 20px; */
+    box-shadow: 0 7px 8px rgba(66, 66, 66, 0.753);
+    height: 80%;
+
+    margin-bottom: 50px;
+}
+
+.container.my-3{
+  padding : 20px;
+  margin-bottom: 100px;
+  /* background-color: red; */
+}
+.card-group img{
+  width: 100%;
+  height: 100%;
+}
+.small{
+  color: grey;
+}
+.card-title{
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(224, 188, 188);
+  
+}

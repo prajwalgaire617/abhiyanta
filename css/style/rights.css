@@ -1,0 +1,16 @@
+.our-rights{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.right-card{
+    font-size: 1.125rem;
+    width: 70%;
+    background-color: white;
+}

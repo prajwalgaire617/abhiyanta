@@ -1,0 +1,16 @@
+{
+    "name": "Abhiyanta",
+    "short_name": "Abhiyanta",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FF69B4",
+    "theme_color": "#fc3d9d",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./img/icons/icon.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        }
+    ]
+}
