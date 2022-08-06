@@ -1,0 +1,22 @@
+body{
+    background: gray;
+}
+.card{
+    background-color: rgb(44, 43, 43);
+    color: white;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 20px;
+}
+.card-group img{
+  width: 100%;
+  height: 100%;
+}
+.small{
+  color: tomato;
+}
+.card-title{
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(224, 188, 188);
+}
