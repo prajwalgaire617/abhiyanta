@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+   
+  }
+
+  .sidebar {
+    width: 190px;
+    height: 100vh;
+    background-color:whitesmoke ;
+    color:darkslategrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+  }
+  
+  .sidebar-top,
+  .sidebar-center,
+  .sidebar-bottom {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border-bottom: 1px solid #4b4b4b;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-center {
+    padding: 0;
+  }
+  
+  .sidebar-bottom {
+    justify-content: center;
+    border: none;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  
+  .brand {
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .list-item {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .list-item-icon {
+    width: 30px;
+    font-size: 20px;
+  }
+  
+  .list-item.active,
+  .list-item:hover {
+    background-color:brown;
+    color: white;
+  }
+
+
+  .name {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .job{
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .sidebar {
+      width: 50px;
+    }
+    .brand,
+    .name,
+    .job,
+    .list-item-text 
+    {
+      display: none;
+    }
+  }
+  .container-fluid{
+    display: flex;
+    width: 100%;
+  }
+
+  .feed{
+
+    width: 70%;
+    border-right: none;
+    min-width: fit-content;
+    overflow-y: scroll;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+   
+  }
+
+  .communHead{
+    position:sticky ;
+    top: 0;
+    text-align: center;
+    background-color: white;
+    z-index: 100;
+    border: none ;
+    padding:15px 20px ;
+  }
+  
+  .communHead h2{
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: darkmagenta;
+  }
+  .feed::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .card{
+    margin-top: 3px;
+    margin-left: 0.5%;
+    padding: 1.5%;
+    border: none ;
+    border-radius: 3px;
+    background-color:lightyellow;
+  
+  }
+  
+  
+  .postBox{
+    padding-bottom: 10px;
+    border-bottom: 8px solid hotpink;
+    padding-right: 10px;
+  }
+  .postBox form{
+    display: flex;
+    flex-direction: column;
+  }
+  .postBoxInput{
+    display: flex;
+    padding: 20px;
+  }
+  .postBoxInput input{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+   height: 80px;
+    padding: 5px;
+   
+  }
+  
+  .readbox form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .read img{
+    width: 40px;
+    height: 50%;
+  }
+.containerThree{
+  width: 20%;
+  padding: 1%;
+  background-color: whitesmoke;
+}
+
+.reaction{
+  padding: 10px 50px 0;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.card-img-top{
+  width: 755px;
+  height: 400px;
+  border-radius: 3px;
+}
