@@ -9,7 +9,7 @@ body {
 }
 
 footer {
-    height: 50%;
+   min-height:50vh;
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 40px;
@@ -21,11 +21,11 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
     background-color: black;
     color: white;
     margin-bottom: 0px;
-
+    width: 70%;
 }
 
 .footer-content h3 {
@@ -64,11 +64,11 @@ footer {
 }
 
 .socials a:hover i{
-    color: hotpink
+    color: rgb(83, 59, 59)
 }
 .footer-bottom{
     background: black;
-    width: 100vw;
+    width: 100%;
     text-align:center;
 }
 .footer-bottom p{
@@ -78,13 +78,9 @@ footer {
     text-transform: capitalize;
     line-height: 3rem;
     color: white;
+    
 }
-.container{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-}
+
 
 .navbar-small{
     position:absolute;
@@ -94,7 +90,16 @@ footer {
 
 }
 
-.contain{
-    display: flex;
+
+
+.container .footer-content{
+    
+        width: 100%;
+    
+     
+
 }
 
+.line{
+    border: 1px solid gray;
+}
