@@ -9,15 +9,24 @@
         <script src="editor.js"></script>
     </head>
     <body>
-        <h1 class="text-center">Report Your Case here.</h1>
         <div class="container">
-            <form action="" class="form-controls">
-                <label for="victim_name">Victim Name: </label>
-                <input type="text" class="form-control" id="victim_name"placeholder="Enter victim name"> 
-                <label for="victim_age">Victim Age: </label>
-                <input type="number" class="form-control" id="victim_age" placeholder="Enter victim age"> 
+            <form action="" class="form-control mt-3">
+                <div class="form-info">
+                    <h2 class="text-center">Report Your Case</h2>
+                    <p class="text-center">Fill the form with correct information</p>
+                </div>
+                <div>
+
+                    <label for="victim_name">Victim Name: </label><br/>
+                    <input type="text" class="form-controls" id="victim_name"placeholder="Enter victim name"> 
+                </div>
+                <div>
+
+                    <label for="victim_age">Victim Age: </label><br/>
+                    <input type="number" class="form-controls" id="victim_age" placeholder="Enter victim age"> 
+                </div>
                 <label for="Editor">Describe your case:</label>
-                <textarea id="editor">       
+                <textarea id="editor" style="border: 2px solid black;">       
                 </textarea>
                 <button class="btn btn-primary my-3">Submit Case</button>
             </form>
